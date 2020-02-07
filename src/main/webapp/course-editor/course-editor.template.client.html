@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+          rel="stylesheet">
+    <link href="course-editor.style.client.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Course Editor</title>
+  </head>
+  <body>
+
+
+    <div>
+      <div class="row">
+        <!--Module List Code-->
+        <div class="col-md-4 bg-dark">
+          <div class="row">
+            <div class="col-2">
+              <button class="btn nav-btn wbdv-course-editor wbdv-close">
+                <i class="fa fa-times"></i>
+              </button>
+            </div>
+            <div class="col-auto">
+              <span class="navbar-brand wbdv-course-title text-white">CS5610 - WebDev</span>
+            </div>
+          </div>
+
+          <ul class="list-group ml-2 wbdv-module-list">
+            <li class="list-group-item rounded-0 m-2 mt-2 text-truncate wbdv-module-item active bg-secondary">
+              <a href="#" class="wbdv-module-item-title">Module 1 - jQuery</a>
+              <a href="#" class="button close">
+                <span aria-hidden="true">&times;</span>
+              </a>
+            </li>
+            <li class="list-group-item rounded-0 m-2 mt-2 text-truncate wbdv-module-item active bg-secondary">
+              <a href="#" class="wbdv-module-item-title">Module 2 - Angular</a>
+              <a href="#" class="button close">
+                <span aria-hidden="true">&times;</span>
+              </a>
+            </li>
+            <li class="list-group-item rounded-0 m-2 mt-2 text-truncate wbdv-module-item active bg-secondary">
+              <a href="#" class="wbdv-module-item-title">Module 3 - React</a>
+              <a href="#" class="button close">
+                <span aria-hidden="true">&times;</span>
+              </a>
+            </li>
+            <li class="list-group-item rounded-0 m-2 mt-2 text-truncate wbdv-module-item active bg-secondary">
+              <a href="#" class="wbdv-module-item-title">Module 4 - Javascript</a>
+              <a href="#" class="button close">
+                <span aria-hidden="true">&times;</span>
+              </a>
+            </li>
+            <li class="list-group-item rounded-0 m-2 mt-2 text-truncate wbdv-module-item active bg-secondary">
+              <a href="#" class="wbdv-module-item-title">Module 5 - HTML</a>
+              <a href="#" class="button close">
+                <span aria-hidden="true">&times;</span>
+              </a>
+            </li>
+            <li class="list-group-item rounded-0 m-2 mt-2 text-truncate wbdv-module-item active bg-secondary">
+              <a href="#" class="wbdv-module-item-title">Module 6 - CSS</a>
+              <a href="#" class="button close">
+                <span aria-hidden="true">&times;</span>
+              </a>
+            </li>
+          </ul>
+
+          <div class="row border-bottom">
+            <button class="btn nav-btn col col-11 ml-4 m-4 wbdv-module-item-add-btn">
+              <i class="fa fa-plus pull-right"></i>
+            </button>
+          </div>
+        </div>
+        <!--End of Module List Code-->
+
+        <div class="col-md-8 pl-0">
+          <!--Nav tabs-->
+          <ul class="nav nav-tabs border-0 bg-dark">
+            <li class="nav-item">
+              <a href="#" class="nav-link text-white wbdv-build-tab">Lesson 1</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link wbdv-page-tab active">Lesson 2</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link text-white wbdv-theme-tab">Lesson 3</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link text-white wbdv-store-tab">Lesson 4</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link text-white wbdv-apps-tab">Lesson 5</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link text-white wbdv-settings-tab">Lesson 6</a>
+            </li>
+            <li class="nav-item">
+              <button class="btn nav-btn wbdv-new-page-btn">
+                <i class="fa fa-plus"></i>
+              </button>
+            </li>
+          </ul>
+          <!--End of Nav tabs-->
+
+          <!--Nav pills-->
+          <ul class="nav nav-pills m-3 wbdv-topic-pill-list">
+            <li class="nav-item mr-md-4 wbdv-topic-pill">
+              <a href="#" class="nav-link active">
+                Topic 1
+              </a>
+            </li>
+            <li class="nav-item mr-md-4 wbdv-topic-pill">
+              <a href="#" class="nav-link">
+                Topic 2
+              </a>
+            </li>
+            <li class="nav-item mr-md-4 wbdv-topic-pill">
+              <a href="#" class="nav-link">
+                Topic 2
+              </a>
+            </li>
+            <li class="nav-item mr-md-4 wbdv-topic-pill">
+              <a href="#" class="nav-link">
+                Topic 2
+              </a>
+            </li>
+            <li class="nav-item wbdv-topic-add-btn">
+              <button class="btn nav-btn">
+                <i class="fa fa-plus-square fa-2x"></i>
+              </button>
+            </li>
+          </ul>
+          <!--End of Nav pills-->
+
+          <!--Save and preview-->
+          <div class="d-flex justify-content-end">
+            <div>
+              <button class="btn btn-success mr-2">
+                Save
+              </button>
+            </div>
+            <div class="mt-1 mr-2">
+              <label for="customSwitch1">Preview</label>
+            </div>
+            <div class="custom-control custom-switch mt-1">
+              <input type="checkbox" class="custom-control-input" id="customSwitch1">
+              <label class="custom-control-label" for="customSwitch1"></label>
+            </div>
+          </div>
+          <!--End of Save and Preview-->
+
+          <!--Heading Widget-->
+          <div class="border rounded m-4">
+            <div class="row mt-2">
+
+              <div class="col ml-2">
+                <h4>Heading Widget</h4>
+              </div>
+
+              <div class="col-auto">
+                <button class="btn btn-warning mr-1">
+                  <i class="fa fa-arrow-circle-up"></i>
+                </button>
+                <button class="btn btn-warning mr-1">
+                  <i class="fa fa-arrow-circle-down"></i>
+                </button>
+                <select class="nav-item mr-1">
+                  <option value="Heading">Heading</option>
+                </select>
+                <button class="btn btn-danger mr-2">
+                  <i class="fa fa-times-circle"></i>
+                </button>
+              </div>
+
+            </div>
+
+            <div class="row mx-2 mt-2">
+              <input class="form-control" placeholder="Heading Text">
+            </div>
+
+            <div class="row mx-2 mt-2">
+              <select class="form-control">
+                <option>Heading 1</option>
+              </select>
+            </div>
+
+            <div class="row mx-2 mt-2">
+              <input class="form-control" placeholder="Widget name">
+            </div>
+
+            <div class="row mx-2 mt-2">
+              <h6>Preview</h6>
+            </div>
+
+            <div class="row mx-2 mt-2">
+              <h1>Heading</h1>
+            </div>
+          </div>
+          <!--End of Heading Widget-->
+          <div>
+            <button class="btn btn-danger wbdv-add-widget-btn">
+              <i class="fa fa-plus"></i>
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </body>
+</html>

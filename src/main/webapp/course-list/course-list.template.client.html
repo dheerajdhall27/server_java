@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+          rel="stylesheet">
+
+    <link href="course-list.style.client.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Title</title>
+  </head>
+  <body class="table-secondary">
+    <!--Navigation bar for the page-->
+    <nav class="navbar sticky-top navbar-expand-md navbar-light bg-primary">
+      <div class="col-0">
+        <button class="btn nav-btn wbdv-field wbdv-hamburger">
+          <i class="fa fa-bars wbdv-field wbdv-hamburger"></i>
+        </button>
+      </div>
+      <div class="col-0">
+        <span class="navbar-brand d-none d-md-block wbdv-label wbdv-course-manager">
+          Course Manager
+        </span>
+      </div>
+
+      <div class="col-8">
+        <input class="form-control wbdv-field wbdv-new-course" type="text" placeholder="New Course Title">
+      </div>
+
+      <div class="col-0">
+        <button class="btn nav-btn wbdv-button wbdv-add-course">
+          <i class="fa fa-plus-circle fa-2x"></i>
+        </button>
+      </div>
+    </nav>
+    <!--End of the navigation bar-->
+    <!-- Rest of The Body -->
+    <table class="table table-secondary table-fixed">
+      <thead>
+        <tr class="row justify-content-md-center border border-secondary">
+          <th class="col-4 border-0 wbdv-header wbdv-title ml-4">Title</th>
+          <th class="col-2 border-0 wbdv-header wbdv-owner text-center d-none d-md-block">Owned by</th>
+          <th class="col-2 border-0 wbdv-header wbdv-last-modified d-none d-md-block">Last modified by me</th>
+          <th class="col-2 border-0 d-none d-md-block" >
+            <div class="row">
+              <button class="btn nav-btn wbdv-button wbdv-grid-layout">
+                <i class="fa fa-th mr-sm-2"></i>
+              </button>
+              <button class="btn nav-btn wbdv-header wbdv-sort">
+                <i class="fa fa-sort"></i>
+              </button>
+            </div>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+
+      <!--Course Row-->
+      <tr class="row justify-content-md-center wbdv-row wbdv-course">
+        <td class="col-8 col-md-4 table-light text-truncate">
+          <i class="fa fa-file wbdv-row wbdv-icon ml-4"></i>
+          <a class="ml-2 wbdv-row wbdv-title" href="/course-editor/course-editor.template.client.html">
+            CS5500 Software Engineering Graduate
+          </a>
+        </td>
+        <td class="col col-md-2 table-light d-none d-md-block wbdv-row wbdv-owner text-center">
+          me
+        </td>
+        <td class="col col-md-2 table-light d-none d-md-block wbdv-row wbdv-modified-date">
+          5:00 PM
+        </td>
+        <td class="col col-md-2 table-light">
+          <button class="btn nav-btn wbdv-row wbdv-button wbdv-delete pull-right">
+            <i class="fa fa-close"></i>
+          </button>
+        </td>
+      </tr>
+
+      <tr class="row justify-content-md-center wbdv-row wbdv-course">
+        <td class="col-8 col-md-4 table-light text-truncate">
+          <i class="fa fa-file wbdv-row wbdv-icon ml-4"></i>
+          <a class="ml-2 wbdv-row wbdv-title" href="/course-editor/course-editor.template.client.html">
+            CS4550 Software Engineering Undergraduate
+          </a>
+        </td>
+        <td class="col col-md-2 table-light d-none d-md-block wbdv-row wbdv-owner text-center">
+          me
+        </td>
+        <td class="col col-md-2 table-light d-none d-md-block wbdv-row wbdv-modified-date">
+          5:00 PM
+        </td>
+        <td class="col col-md-2 table-light">
+          <button class="btn nav-btn wbdv-row wbdv-button wbdv-delete pull-right">
+            <i class="fa fa-close"></i>
+          </button>
+        </td>
+      </tr>
+      <tr class="row justify-content-md-center wbdv-row wbdv-course">
+        <td class="col-8 col-md-4 table-light text-truncate">
+          <i class="fa fa-file wbdv-row wbdv-icon ml-4"></i>
+          <a class="ml-2 wbdv-row wbdv-title" href="/course-editor/course-editor.template.client.html">
+            CS4500 WebDev Undergraduate
+          </a>
+        </td>
+        <td class="col col-md-2 table-light d-none d-md-block wbdv-row wbdv-owner text-center">
+          me
+        </td>
+        <td class="col col-md-2 table-light d-none d-md-block wbdv-row wbdv-modified-date">
+          5:00 PM
+        </td>
+        <td class="col col-md-2 table-light">
+          <button class="btn nav-btn wbdv-row wbdv-button wbdv-delete pull-right">
+            <i class="fa fa-close"></i>
+          </button>
+        </td>
+      </tr>
+      <tr class="row justify-content-md-center wbdv-row wbdv-course">
+        <td class="col-8 col-md-4 table-light text-truncate">
+          <i class="fa fa-file wbdv-row wbdv-icon ml-4"></i>
+          <a class="m-2 wbdv-row wbdv-title" href="/course-editor/course-editor.template.client.html">
+            CS5610 WebDev Graduate
+          </a>
+        </td>
+        <td class="col col-md-2 table-light d-none d-md-block wbdv-row wbdv-owner text-center">
+          me
+        </td>
+        <td class="col col-md-2 table-light d-none d-md-block wbdv-row wbdv-modified-date">
+          5:00 PM
+        </td>
+        <td class="col col-md-2 table-light">
+          <button class="btn nav-btn wbdv-row wbdv-button wbdv-delete pull-right">
+            <i class="fa fa-close"></i>
+          </button>
+        </td>
+      </tr>
+
+      <tr class="row justify-content-md-center wbdv-row wbdv-course">
+        <td class="col-8 col-md-4 table-light text-truncate">
+          <i class="fa fa-file wbdv-row wbdv-icon ml-4"></i>
+          <a class="ml-2 wbdv-row wbdv-title" href="/course-editor/course-editor.template.client.html">
+            CS5200 Intro to Databases
+          </a>
+        </td>
+        <td class="col col-md-2 table-light d-none d-md-block wbdv-row wbdv-owner text-center">
+          me
+        </td>
+        <td class="col col-md-2 table-light d-none d-md-block wbdv-row wbdv-modified-date">
+          5:00 PM
+        </td>
+        <td class="col col-md-2 table-light">
+          <button class="btn nav-btn wbdv-row wbdv-button wbdv-delete pull-right">
+            <i class="fa fa-close"></i>
+          </button>
+        </td>
+      </tr>
+      <!--End of Course Row-->
+
+      </tbody>
+    </table>
+
+    <div>
+      <button class="btn nav-btn wbdv-button wbdv-add-course-bottom">
+        <i class="fa fa-plus fa-3x"></i>
+      </button>
+    </div>
+  </body>
+
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+          rel="stylesheet">
+
+    <link href="user-admin.style.client.css" rel="stylesheet">
+    <title>Title</title>
+  </head>
+  <body>
+    <h1 class="bg-light">USER ADMIN</h1>
+    <div class="table-responsive-sm">
+      <table class="table table-fixed">
+        <!--Table Head-->
+        <thead>
+        <tr class="bg-primary">
+          <th class="text-white">Username</th>
+          <th class="text-white">Password</th>
+          <th class="text-white">First Name</th>
+          <th class="text-white">Last Name</th>
+          <th class="text-white">Role</th>
+          <th></th>
+        </tr>
+        <tr class="wbdv-form bg-secondary">
+          <td>
+            <input id="usernameFld"
+                   class="form-control w-auto"
+                   placeholder="Username"
+                   required/>
+          </td>
+          <td>
+            <input id="passwordFld"
+                   class="form-control w-auto"
+                   placeholder="Password"
+                   type="password"
+                   required/>
+          </td>
+          <td>
+            <input id="firstNameFld"
+                   class="form-control w-auto"
+                   placeholder="First Name"
+                   required/>
+          </td>
+          <td>
+            <input id="lastNameFld"
+                   class="form-control w-auto"
+                   placeholder="Last Name"
+                   required/>
+          </td>
+          <td>
+            <select id="roleFld" class="form-control">
+              <option value="FACULTY">Faculty</option>
+              <option value="STUDENT">Student</option>
+              <option value="ADMIN">Admin</option>
+            </select>
+          </td>
+          <td>
+            <span class="float-right wbdv-button-span">
+              <i class="fa-2x fa fa-search wbdv-search mr-sm-2"></i>
+              <i class="fa-2x fa fa-plus wbdv-create mr-sm-2"></i>
+              <i class="fa-2x fa fa-check wbdv-update mr-sm-2"></i>
+            </span>
+          </td>
+        </tr>
+
+        </thead>
+        <!--End of Table Head-->
+
+        <!--Table Body-->
+        <tbody class="wbdv-tbody">
+        <tr class="wbdv-template wbdv-user wbdv-hidden table-secondary">
+          <td class="wbdv-username"></td>
+          <td>&nbsp;</td>
+          <td class="wbdv-first-name"></td>
+          <td class="wbdv-last-name"></td>
+          <td class="wbdv-role"></td>
+          <td class="wbdv-actions">
+        <span class="float-right">
+          <i id="wbdv-remove" class="fa-2x fa fa-times wbdv-remove mr-sm-2"></i>
+          <i id="wbdv-edit" class="fa-2x fa fa-pencil wbdv-edit mr-sm-2"></i>
+        </span>
+          </td>
+        </tr>
+        </tbody>
+
+        <!--End of table body-->
+      </table>
+
+    </div>
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous">
+    </script>
+    <script src="/services/user.service.client.js"></script>
+    <script src="/models/user.model.client.js"></script>
+    <script src="user-admin.controller.client.js"></script>
+  </body>
+</html>

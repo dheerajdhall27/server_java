@@ -1,0 +1,26 @@
+.wbdv-course-manager{
+  color: white !important;
+}
+
+.wbdv-hamburger{
+  color: white !important;
+}
+
+.wbdv-new-course {
+  font-style: italic;
+}
+
+.fa-plus{
+  color: rgb(255, 82,82);
+}
+
+.fa-plus-circle{
+  color: rgb(255, 120, 120);
+}
+
+.wbdv-add-course-bottom {
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+}
+

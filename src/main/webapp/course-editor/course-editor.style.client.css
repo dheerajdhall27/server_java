@@ -1,0 +1,21 @@
+.wbdv-close {
+  color: white;
+}
+
+.wbdv-new-page-btn {
+  color: white;
+}
+
+.wbdv-module-item-add-btn {
+  color: white;
+}
+
+.wbdv-module-item-title {
+  color: white;
+}
+
+.wbdv-add-widget-btn {
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+}
