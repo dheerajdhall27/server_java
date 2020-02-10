@@ -8,7 +8,7 @@ function AdminUserServiceClient() {
   this.findUserById = findUserById;
   this.deleteUser = deleteUser;
   this.updateUser = updateUser;
-  this.url = 'https://wbdv-generic-server.herokuapp.com/api/001354999/users';
+  this.url = 'https://wbdv-generic-server.herokuapp.com/api/dheerajdhall/users';
   var self = this;
 
   /**
